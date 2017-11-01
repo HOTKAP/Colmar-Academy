@@ -1,0 +1,44 @@
+body {
+  font-size: 18px;
+}
+
+/* Header content */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 64px;
+  margin: 0 24px;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  padding-left: 16px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  line-height: 32px;
+}
+
+.logo img {
+  height: 60px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: Arial;
+}
+
+li {
+  font-size: 1.5rem;
+  font-family: Arial;
+}
