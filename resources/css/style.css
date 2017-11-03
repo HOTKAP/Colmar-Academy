@@ -1,5 +1,6 @@
 body {
   font-size: 18px;
+  font-family: Arial;
 }
 
 /* Header content */
@@ -43,12 +44,10 @@ header nav ul li {
 
 h1 {
   font-size: 2.5rem;
-  font-family: Arial;
 }
 
 li {
   font-size: 1.5rem;
-  font-family: Arial;
 }
 
 .mobile-nav {
@@ -90,14 +89,12 @@ li {
 }
 
 .banner1-text h1 {
-  font-family: Arial;
   font-size: 4rem;
   font-weight: 800;
   padding-bottom: 2rem;
 }
 
 .banner1-text h3 {
-  font-family: Arial;
   font-size: 1.5rem;
   font-weight: 600;
   padding-bottom: 2rem;
@@ -111,7 +108,6 @@ li {
   border-radius: 8px;
   text-align: center;
   color: white;
-  font-family: Arial;
   font-size: 1.5rem;
   transition-property: background-color;
   transition-duration: 300ms;
@@ -139,3 +135,124 @@ li {
     padding-bottom: 32px;
   }
 }
+/* Second Block and Column content */
+  .block1 {
+    display: flex;
+    padding-bottom: 32px;
+  }
+
+  .column1 {
+    padding: 32px 24px;
+    border-left: 1px solid grey;
+    width: 60%;
+  }
+
+  .column1 img {
+    width: 100%;
+  }
+
+  .column1 h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 32px;
+    padding-bottom: 24px;
+  }
+
+  .column1 p {
+    padding-bottom: 24px;
+  }
+
+  .column1 span {
+    padding-bottom: 32px;
+  }
+
+  .column2 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding-bottom: 32px;
+  }
+
+  .column2 img {
+    width: 35%;
+    height: auto;
+    padding: 16px;
+  }
+
+  .infobox {
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgrey;
+  }
+
+  .textbox {
+    width: 65%;
+  }
+
+  .textbox h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding-bottom: 10px;
+  }
+
+  .textbox p {
+    font-size: 1rem;
+    padding-bottom: 10px;
+  }
+
+  .textbox span {
+    font-size: 0.75rem;
+    color: blue;
+  }
+
+  #lecture {
+    background-color: #7db49f;
+  }
+
+  .orient-mobile,
+  .campus-mobile,
+  .guest-mobile {
+    display: none;
+  }
+
+
+  @media only screen and (max-width: 710px) {
+    .block1 {
+      width: 100%;
+    }
+    .banner1 {
+      padding-bottom: 10px;
+    }
+    .column2 {
+      width: 100%;
+    }
+    .column1 {
+      display: none;
+    }
+    .column2 img {
+      width: 95%;
+      height: 100%;
+      padding: 0 16px;
+    }
+    .orient-web,
+    .campus-web,
+    .guest-web {
+      display: none;
+    }
+    .orient-mobile,
+    .campus-mobile,
+    .guest-mobile {
+      display: block;
+    }
+    .infobox {
+      display: block;
+      border: none;
+    }
+    .textbox {
+      padding: 32px 0 64px 32px;
+      width: 95%;
+    }
+    #lecture {
+      background-color: white;
+    }
+  }
